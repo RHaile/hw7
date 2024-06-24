@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW 7</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- The navigation menu -->
+      <div class="navbar">
+        <div class="subnav">
+          <button class="subnavbtn" onclick="allShows()">
+            All Shows <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">
+            Genre<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="subnav-content">
+            <button onclick="actionFunction()">Action</button>
+            <button onclick="dramaFunction()">Drama</button>
+            <button onclick="horrorFunction()">Horror</button>
+            <button onclick="romanceFunction()">Romance</button>
+            <button onclick="scifiFunction()">SciFi</button>
+            <button onclick="sitcomFunction()">Sitcom</button>
+            <button onclick="thrillerFunction()">Thriller</button>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">
+            Streaming Platform <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="subnav-content">
+            <button onclick="amazonFunction()">Amazon Prime</button>
+            <button onclick="appleFunction()">Apple TV</button>
+            <button onclick="disneyFunction()">Disney+</button>
+            <button onclick="huluFunction()">Hulu</button>
+            <button onclick="maxFunction()">Max</button>
+            <button onclick="netflixFunction()">Netflix</button>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">
+            Sort By <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="subnav-content">
+            <button onclick="alphaFunction()">Alphabetically</button>
+            <button onclick="ratingsFunction()">Ratings</button>
+            <button onclick="seasonsFunction()">Seasons</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="itemDisplay row"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
